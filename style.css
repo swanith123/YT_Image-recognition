@@ -1,0 +1,15 @@
+.heading{
+width: 80%;
+font-size: 22px;
+}
+
+#webcam_view{
+    width: 350px;
+    border: 2px dashed black;
+    height: 300px;
+}
+
+body{
+    font-size: 22px;
+    color: maroon;
+}

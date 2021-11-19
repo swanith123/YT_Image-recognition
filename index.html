@@ -1,0 +1,60 @@
+ 
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body style="background: linear-gradient(to bottom, #66ffff 0%, #0099ff 100%); font-family: 'Raleway', sans-serif;">
+  <div class="container">
+    
+    <center>
+<h3 class="btn btn-default heading">IMAGE RECOGNITION</h3>
+      <br><br>
+
+      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+
+      <b class="objects">
+      Watch 
+      <hr>
+      Water Bottle
+      <hr>
+      Phone
+      <hr>
+      Spoon
+      <hr>
+      </b>
+      <br>
+      <label>Webcam View - </label>
+    <div id="webcam_view"></div>
+      <br><br>
+      <div id="webcam_answer"></div>
+      <br><br>
+      <button class="btn btn-danger" onclick="capture_image()">Capture Image</button>
+      <br><br>
+<button class="btn btn-warning" onclick="identify_image()">Identify Image</button>
+      <br><br>
+    
+      <p style="font-size: 22px;">Object :  <span id="result_object_name"></p>
+      <p style="font-size: 22px;">Accuracy :  <span id="result_object_accuracy"></p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
